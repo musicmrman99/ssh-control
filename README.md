@@ -23,3 +23,6 @@ To make it take effect, either reboot, login/logout, or make it show immediately
 ```
 xfce4-panel --restart
 ```
+
+# Usage
+Press the button.
