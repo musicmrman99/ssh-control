@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Toggle SSH
+Comment=Toggle SSH Active/Inactive Status
+GenericName=Service Management Utility
+Exec=bash -c ". ~/.bashrc-user && export BASH_LIB_ROOT && '/home/william/Bash Library/ssh-control/toggle.sh'"
+Icon=/home/william/Bash Library/ssh-control/data/inactive.png
+Terminal=false
+StartupNotify=false
+Type=Application
+Categories=System;Utility;
