@@ -22,7 +22,7 @@ systemctl status ssh > /dev/null
 status_ret=$?
 
 if [ $status_ret = 0 ]; then
-	gksudo systemctl stop ssh
+	pkexec systemctl stop ssh
 	stop_ret=$?
 
 	if [ $stop_ret != 0 ]; then
@@ -34,7 +34,7 @@ if [ $status_ret = 0 ]; then
 		notify-send --icon "$ssh_control_data_dir"/"$new_icon" 'SSH Service - Disabled'
 	fi
 elif [ $status_ret = 3 ]; then
-	gksudo systemctl start ssh
+	pkexec systemctl start ssh
 	start_ret=$?
 
 	if [ $start_ret != 0 ]; then
